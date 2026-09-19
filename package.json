@@ -1,0 +1,25 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "saucedemo:test": "npx playwright test --config=playwright.config.ts --grep @saucedemo --headed",
+    "rahul:test": "ENV=RAHUL npx playwright test --config=playwright.config.ts --grep @rahul --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.planittesting.com/rtunuguntla/playwrightautomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
