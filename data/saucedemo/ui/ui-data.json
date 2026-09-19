@@ -1,0 +1,22 @@
+{
+  "name": "This file serves as data for Saucedemo UI Tests",
+  "users": {
+    "standard": "standard_user",
+    "locked": "locked_out_user",
+    "problem": "problem_user",
+    "performance": "performance_glitch_user",
+    "error": "error_user",
+    "visual": "visual_user"
+  },
+  "password": "secret_sauce",
+  "checkoutInformation": {
+    "firstName": "John",
+    "lastname": "Doe",
+    "zipcode": 12345
+  },
+  "productName": {
+    "standard_user_product": "Sauce Labs Backpack",
+    "problem_user_product": "Sauce Labs Bolt T-Shirt"
+  },
+  "successMessage": "Thank you for your order!"
+}

@@ -7,3 +7,8 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .env
+.auth/
+allure/
+allure-report/
+allure-results/
+tests/specs/e2e/saucedemo/saucedemo.spec.ts-snapshots/

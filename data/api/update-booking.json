@@ -1,0 +1,29 @@
+{
+    "validBooking": {
+        "firstname": "Jake",
+        "lastname": "White",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    },
+    "validResponse":200,
+    "invalidBookingId": 12312331,
+    "invalidResponse":405,
+    "missingInfo":{
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    },
+    "missingInfoResponse": 400,
+    "invalidToken":"436782838873",
+    "invalidTokenResponse": 403
+}
+
