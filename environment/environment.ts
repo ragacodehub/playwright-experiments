@@ -1,17 +1,7 @@
+import { EnvironmentType } from './environment.type';
 
-class Environement{
-    
-   urls: Environment{    
-    saucedemo:
-      {
-        baseurl:"https://www.saucedemo.com/"
-      },
-      rahulshetty:"https://rahulshettyacademy.com/client/",
-      restfulbooker:"https://restful-booker.herokuapp.com/"
-  }
-}
-
-saudeom:
-{
-  basurl:""
-}
+export const environments: EnvironmentType = {
+  SAUCEDEMO: { baseUrl: 'https://www.saucedemo.com/' },
+  RAHUL: { baseUrl: 'https://rahulshettyacademy.com/client/#/auth/login' },
+  RESTFUL: { baseUrl: 'https://restful-booker.herokuapp.com/' },
+};

@@ -1,7 +1,5 @@
-interface Environment{
- 
- product:{
-        baseurl:string
-}
-
+export interface EnvironmentType {
+  [product: string]: {
+    baseUrl: string;
+  };
 }

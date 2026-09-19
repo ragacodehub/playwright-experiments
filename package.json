@@ -1,25 +1,40 @@
 {
   "name": "playwright-automation",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is created for playwright learning and development",
   "main": "index.js",
   "scripts": {
-    "saucedemo:test": "npx playwright test --config=playwright.config.ts --grep @saucedemo --headed",
-    "rahul:test": "ENV=RAHUL npx playwright test --config=playwright.config.ts --grep @rahul --headed"
+    "test:all": "ENV=SAUCEDEMO npx playwright test --config=playwright.saucedemo.config.ts --headed",
+    "multi-user:ui:test": "ENV=SAUCEDEMO npx playwright test --config=playwright.saucedemo.config.ts --project=saucedemo-ui-tests --grep \"@problem|@performance|@standard\" --headed",
+    "tag:test:rahul": "ENV=RAHUL npx playwright test --config=playwright.rahulshetty.config.ts --grep @rahul --headed",
+    "api:test": "ENV=RESTFUL npx playwright test --config=playwright.api.config.ts --headed",
+    "tag:test:saucedemo": "ENV=SAUCEDEMO npx playwright test --config=playwright.saucedemo.config.ts --project=standardUser --grep @saucedemo --headed",
+    "project:api:test": "ENV=SAUCEDEMO npx playwright test --config=playwright.saucedemo.config.ts --project=saucedemo-api-tests",
+    "visual:test": "ENV=SAUCEDEMO npx playwright test --config=playwright.saucedemo.config.ts --grep @visual --headed",
+    "api:mock": "npx playwright test --config=playwright.saucedemo.config.ts --project=standardUser --grep @mocking --headed",
+    "generate:allure-report": "npx allure generate allure-results --clean -o allure-report",
+    "open:allure-report": "allure open allure-report"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.planittesting.com/rtunuguntla/playwrightautomation.git"
+    "url": "https://github.com/ragacodehub/playwright-experiments.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.0"
+    "@types/node": "^26.1.1",
+    "allure-playwright": "^3.10.2",
+    "eslint": "^10.6.0",
+    "eslint-plugin-playwright": "^2.10.5",
+    "prettier": "^3.9.5",
+    "typescript-eslint": "^8.63.0"
   },
   "dependencies": {
+    "ajv": "^8.20.0",
     "dotenv": "^17.4.2"
   }
 }
